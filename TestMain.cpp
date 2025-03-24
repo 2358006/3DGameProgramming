@@ -1,20 +1,24 @@
 #include <GL/glut.h>
 
-void mydisplay() {
+
+void DisplayRectangle()
+{
 	glClear(GL_COLOR_BUFFER_BIT);
-	glBegin(GL_POLYGON);	   
+	glBegin(GL_POLYGON);
+
 	glVertex3f(-0.5, -0.5, 0.0);
-	glVertex3f(0.5, -0.5, 0.0);  	
-	glVertex3f(0.5, 0.5, 0.0);  	
-	glVertex3f(-0.5, 0.5, 0.0);  	
-	glEnd();			
-	glFlush();			
+	glVertex3f(0.5, -0.5, 0.0);
+	glVertex3f(0.5, 0.5, 0.0);
+	glVertex3f(-0.5, 0.5, 0.0);
+	
+	glEnd();
+	glFlush();
 }
 
 int main(int argc, char* argv[]) {
 	glutInit(&argc, argv);	   
 	glutCreateWindow("Test");	   
-	glutDisplayFunc(mydisplay);	   
+	glutDisplayFunc(DisplayTriangle);
 	glutMainLoop();		   
 	return 0;			   
 }
