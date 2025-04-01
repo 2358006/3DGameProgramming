@@ -99,7 +99,6 @@ void DisplayStar() {
 	glFlush();
 }
 
-
 int main(int argc, char* argv[]) {
 	glutInit(&argc, argv);
 	glutCreateWindow("Test");

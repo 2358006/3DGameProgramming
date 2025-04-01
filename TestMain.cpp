@@ -1,6 +1,5 @@
 #include <GL/glut.h>
 
-
 void DisplayRectangle()
 {
 	glClear(GL_COLOR_BUFFER_BIT);
@@ -16,9 +15,9 @@ void DisplayRectangle()
 }
 
 int main(int argc, char* argv[]) {
-	glutInit(&argc, argv);	   
-	glutCreateWindow("Test");	   
-	glutDisplayFunc(DisplayTriangle);
-	glutMainLoop();		   
-	return 0;			   
+	glutInit(&argc, argv);
+	glutCreateWindow("Test");
+	glutDisplayFunc(DisplayRectangle);
+	glutMainLoop();
+	return 0;
 }

@@ -18,7 +18,10 @@
     <ClCompile Include="TestMain.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="Report.cpp">
+    <ClCompile Include="Week3ReportMain.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="class.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
